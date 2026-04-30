@@ -1,0 +1,144 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 24,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send unsolicited pong with payload. Verify nothing is received. Clean close with normal code.",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "Nothing.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: BCn3fG03QKfMNk5a03wsJA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FUzfwCTPZbV4XUN9Dw53OuL/vIc=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=9phQlvV0HVp9f1x33O7qfj__AqP0Gw2giXoEohcLdG5Pe1ZXiP3r8TC8opULpWDMUPwKHf21gAFcwEKEXV5fmQ; Expires=Fri, 30 Apr 2027 09:31:10 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:31:10 GMT\r\n\r\n",
+   "id": "2.8",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "496": 1
+   },
+   "started": "2026-04-30T09:31:10.758Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "8": 1,
+      "10": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "30": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            24,
+            "unsolicited pong payload"
+         ],
+         10,
+         true,
+         0,
+         "af0e5ffc",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            30,
+            "8a98af0e5ffcda602c93c3673c95db6b3bdcdf61319b8f7e3e85c3613e98"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "dfd6e9f0",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882dfd6e9f0dc3e"
+         ],
+         false
+      ],
+      [
+         "TI",
+         1
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}

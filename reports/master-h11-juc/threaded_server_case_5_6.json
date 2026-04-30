@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, one ping with payload in-between.",
    "droppedByMe": false,
-   "duration": 43,
+   "duration": 42,
    "expectation": "A pong is received, then the message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -31,8 +31,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: XON+em42iWtmSXjjpS3zrw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: CokoLvzwpZdj+cTsSQOZDQMgRkU=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=JA3t4uloCWtmgJqf1CJULkzV030ZctapKMvj--4iK-fZy07PhEqXOhBeYRxBRhUdsESeCu2_fBueLZZlNitxLw; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: gbeTULsy0mgwmK4AUP2VMw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:06 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: SASupD8/4GCvY+JPAkzErrd10oA=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=dKI0l64uh_gdRONVoKfzcyioXDz2HOkz1DraNqWx7GKrsdhcSTpdt6G8Tn0VSK3nRQqOSSt8XfnitFEOhBNEmA; Expires=Fri, 30 Apr 2027 09:27:06 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "5.6",
    "isServer": false,
    "localCloseCode": 1000,
@@ -65,7 +65,7 @@
       "20": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.647Z",
+   "started": "2026-04-30T09:27:06.041Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -97,7 +97,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -109,7 +109,7 @@
          1,
          false,
          0,
-         "a425052f",
+         "0adb50c5",
          null,
          null,
          false
@@ -118,7 +118,7 @@
          "TO",
          [
             15,
-            "0189a425052fc2576448c9406b5b95"
+            "01890adb50c56ca931a267be3eb13b"
          ],
          false
       ],
@@ -131,7 +131,7 @@
          9,
          true,
          0,
-         "2faa6a9d",
+         "09003d26",
          null,
          null,
          false
@@ -140,7 +140,7 @@
          "TO",
          [
             18,
-            "898c2faa6a9d5fc304fa0fda0be443c50bf9"
+            "898c09003d267969534129705c5f656f5c42"
          ],
          false
       ],
@@ -153,7 +153,7 @@
          0,
          true,
          0,
-         "48bb57ad",
+         "8df5ed51",
          null,
          null,
          false
@@ -162,7 +162,7 @@
          "TO",
          [
             15,
-            "808948bb57ad2ec936ca25de39d97a"
+            "80898df5ed51eb878c36e0908325bf"
          ],
          false
       ],
@@ -217,7 +217,7 @@
          8,
          true,
          0,
-         "16cd4bbb",
+         "448ab849",
          null,
          null,
          false
@@ -226,7 +226,7 @@
          "TO",
          [
             8,
-            "888216cd4bbb1525"
+            "8882448ab8494762"
          ],
          false
       ],

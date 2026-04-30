@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link id="wr-font-material" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" rel="stylesheet">
+
+    <title>WebSocket Autobahn Reports</title>
+    
+<style id="wr-styles">
+    :root {
+        --wr-primary: #1a73e8;
+        --wr-bg: #f8f9fa;
+        --wr-surface: #ffffff;
+        --wr-text-main: #202124;
+        --wr-text-subtle: #5f6368;
+        --wr-border: #dadce0;
+        --wr-shadow: 0 4px 12px rgba(60,64,67, 0.15), 0 1px 3px rgba(60,64,67, 0.3);
+    }
+    .wr-navbar {
+        position: sticky;
+        top: 0;
+        background: var(--wr-surface);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--wr-border);
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', 'Arial', sans-serif;
+        justify-content: space-between;
+    }
+    .wr-navbar__link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--wr-primary);
+        text-decoration: none;
+    }
+    .wr-navbar__linkTitleContainer {
+        display: flex;
+        align-items: center;
+    }
+    .wr-navbar__title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+        margin-left: 8px;
+        color: var(--wr-text-main);
+    }
+    .wr-navbar__branch {
+        color: inherit;
+        text-decoration: none;
+        margin-left: 4px;
+        opacity: 0.8;
+    }
+    .wr-navbar__branch:hover {
+        text-decoration: underline;
+    }
+    .wr-navbar__branchContainer {
+        display: flex;
+    }
+    @media screen and (max-width: 768px) {
+        #agent_case_results {
+            margin: 0 !important;
+        }
+        #master_report_header {
+            margin: 10 px!important;
+        }
+    }
+</style>
+
+    <style>
+        body { margin: 0; background-color: var(--wr-bg); color: var(--wr-text-main); font-family: 'Roboto', sans-serif; }
+        .wr-container { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+        .wr-status { margin-bottom: 16px; padding: 0 8px; font-size: 0.85rem; color: var(--wr-text-subtle); text-transform: uppercase; font-weight: 600; }
+        .wr-list { display: flex; flex-direction: column; gap: 12px; }
+    </style>
+</head>
+<body>
+    <header id="wr-navbar" class="wr-navbar">
+    <a href="./index.html" class="wr-navbar__link">
+        <div class="wr-navbar__linkTitleContainer">
+            <span class="material-symbols-outlined" style="font-size: 28px;">lan</span>
+            <h1 class="wr-navbar__title">WebSocket Autobahn Reports</h1>
+        </div>
+    </a>
+</header>
+    <main class="wr-container">
+        <div class="wr-status">2 Reports</div>
+        <div class="wr-list">
+<style>
+    .wr-item {
+        background: var(--wr-surface);
+        border: 1px solid var(--wr-border);
+        border-radius: 8px;
+        padding: 16px 20px;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .wr-item:hover { box-shadow: var(--wr-shadow); border-color: transparent; }
+    .wr-item__icon { background: #e8f0fe; color: var(--wr-primary); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 20px; }
+    .wr-item__info { flex-grow: 1; }
+    .wr-item__name { font-weight: 500; display: block; margin-bottom: 2px; }
+    .wr-item__meta { font-size: 0.8rem; color: var(--wr-text-subtle); }
+    .wr-item__chevron { color: #bdc1c6; }
+    .wr-item:hover .wr-item__chevron { color: var(--wr-primary); }
+</style>
+<a href="./master/index.html" class="wr-item">
+    <div class="wr-item__icon"><span class="material-symbols-outlined">folder_open</span></div>
+    <div class="wr-item__info">
+        <span class="wr-item__name">master</span>
+        <span class="wr-item__meta">Modified: Apr 30, 2026 11:31</span>
+    </div>
+    <span class="material-symbols-outlined wr-item__chevron">arrow_forward_ios</span>
+</a>
+
+
+<style>
+    .wr-item {
+        background: var(--wr-surface);
+        border: 1px solid var(--wr-border);
+        border-radius: 8px;
+        padding: 16px 20px;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .wr-item:hover { box-shadow: var(--wr-shadow); border-color: transparent; }
+    .wr-item__icon { background: #e8f0fe; color: var(--wr-primary); width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 20px; }
+    .wr-item__info { flex-grow: 1; }
+    .wr-item__name { font-weight: 500; display: block; margin-bottom: 2px; }
+    .wr-item__meta { font-size: 0.8rem; color: var(--wr-text-subtle); }
+    .wr-item__chevron { color: #bdc1c6; }
+    .wr-item:hover .wr-item__chevron { color: var(--wr-primary); }
+</style>
+<a href="./master-h11-juc/index.html" class="wr-item">
+    <div class="wr-item__icon"><span class="material-symbols-outlined">folder_open</span></div>
+    <div class="wr-item__info">
+        <span class="wr-item__name">master-h11-juc</span>
+        <span class="wr-item__meta">Modified: Apr 30, 2026 11:28</span>
+    </div>
+    <span class="material-symbols-outlined wr-item__chevron">arrow_forward_ios</span>
+</a>
+</div>
+    </main>
+</body>
+</html>

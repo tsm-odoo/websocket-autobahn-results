@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="https://autobahn-testsuite.readthedocs.io/" title="Autobahn WebSocket Testsuite"><img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="https://autobahn-testsuite.readthedocs.io/"           title="Autobahn WebSocket">          <img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 2.8</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2026-04-30T07:45:50.400Z</a></p>
+      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 2.8</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2026-04-30T09:27:05.807Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send unsolicited pong with payload. Verify nothing is received. Clean close with normal code.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Nothing.</p>
 
@@ -221,17 +221,17 @@ Upgrade: WebSocket
 Connection: Upgrade
 Pragma: no-cache
 Cache-Control: no-cache
-Sec-WebSocket-Key: +Rt3wY9flCVnoo0Jswdplw==
+Sec-WebSocket-Key: XkRj99LGhR7PMgE8sjtaYA==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 SWITCHING PROTOCOLS
-date: Thu, 30 Apr 2026 07:45:50 GMT
+date: Thu, 30 Apr 2026 09:27:05 GMT
 upgrade: websocket
 connection: Upgrade
-sec-websocket-accept: xeU13r9/7qNqWN0Yn5tUwg3pASk=
+sec-websocket-accept: otzKTUBMU8zd//Lx0ro3Bd604I0=
 content-type: text/html; charset=utf-8
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST
-set-cookie: session_id=FhJdg63_s_PRQAJV3I2KbpvMwLCfl3Aus2jpIiHwqLarNDW4L295JJnVDksmUUHRPOzlcTuAyjNuU5Gr-vD5PQ; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/
+set-cookie: session_id=bVZ3kPrlXMtTl5WVTPTTXTSCrag6zPgUq6KF-2913mxzlxv9xn4hq1vyJrW2QFIjLp5160VP1J-Nh1mW7R19tQ; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/
 x-content-type-options: nosniff
 server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
       <br/><hr/>
@@ -287,13 +287,13 @@ server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
          <pre class="wirelog_tx_octets">000 TX OCTETS: 474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453</pre>
          <pre class="wirelog_tx_octets">               756974652f32352e31302e312d30 ...</pre>
          <pre class="wirelog_rx_octets">001 RX OCTETS: 485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c203330204170</pre>
-         <pre class="wirelog_rx_octets">               7220323032362030373a34353a35 ...</pre>
-         <pre class="wirelog_tx_frame">002 TX FRAME : OPCODE=10, FIN=True, RSV=0, PAYLOAD-LEN=24, MASK=0ab4dc16, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_rx_octets">               7220323032362030393a32373a30 ...</pre>
+         <pre class="wirelog_tx_frame">002 TX FRAME : OPCODE=10, FIN=True, RSV=0, PAYLOAD-LEN=24, MASK=a006ee86, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               unsolicited pong payload</pre>
-         <pre class="wirelog_tx_octets">003 TX OCTETS: 8a980ab4dc167fdaaf7966ddbf7f7ed1b8367adbb2712ac4bd6f66dbbd72</pre>
-         <pre class="wirelog_tx_frame">004 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=d7d8af7e, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_tx_octets">003 TX OCTETS: 8a98a006ee86d5689de9cc6f8defd4638aa6d06980e180768fffcc698fe2</pre>
+         <pre class="wirelog_tx_frame">004 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=f523b4b7, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>
-         <pre class="wirelog_tx_octets">005 TX OCTETS: 8882d7d8af7ed430</pre>
+         <pre class="wirelog_tx_octets">005 TX OCTETS: 8882f523b4b7f6cb</pre>
          <pre class="wirelog_kill_after">006 CLOSE CONNECTION AFTER 1.000000 sec</pre>
          <pre class="wirelog_rx_octets">007 RX OCTETS: 880203e8</pre>
          <pre class="wirelog_rx_frame">008 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=False, MASK=None</pre>

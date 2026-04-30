@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping with <b>RSV = 6</b>.",
    "droppedByMe": false,
-   "duration": 2,
+   "duration": 1,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: QJOOOXNHq7gzw5bd1nCsYg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: omeFM3CYTYcKRgK7w8t6NDh0CJk=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=D148UHXPARWB6SU9dwmuq54D-xWieLJL1JPzyaU4Y0gkTrcBvab62aUxJihUDV6BR3c-0wrYkZ7nWaZZbiviPg; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: lPtVsJF26X8kEPzc9NgZIg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:05 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: bxOkO1xKVNZ16TUhhBrxO1Ypgww=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=AXEYdFEUPuGOUx_ujmqpF3sD1NzMCYLpZOwdOv0eilr7pqbvCg3gGA8TqcUoT2cmNdvlpxRtNDf_pvuS22gC8g; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "3.6",
    "isServer": false,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "31": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.518Z",
+   "started": "2026-04-30T09:27:05.924Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -70,7 +70,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -82,7 +82,7 @@
          2,
          true,
          6,
-         "d6d4e81d",
+         "a1cae9eb",
          null,
          null,
          false
@@ -91,7 +91,7 @@
          "TO",
          [
             19,
-            "e28dd6d4e81d9eb18471b9f8c86ab9a68479f7"
+            "e28da1cae9ebe9af8587cee6c99cceb8858f80"
          ],
          false
       ],
@@ -127,7 +127,7 @@
          8,
          true,
          0,
-         "4953ca77",
+         "809aa0ea",
          null,
          null,
          false
@@ -136,7 +136,7 @@
          "TO",
          [
             8,
-            "88824953ca774abb"
+            "8882809aa0ea8372"
          ],
          false
       ]

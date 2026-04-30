@@ -1,0 +1,376 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 64,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Same as Case 5.19, but send all frames with SYNC = True.\n   Note, this does not change the octets sent in any way, only how the stream\n   is chopped up on the wire.",
+   "droppedByMe": false,
+   "duration": 1002,
+   "expectation": "Same as Case 5.19. Implementations must be agnostic to how\n   octet stream is chopped up on wire (must be TCP clean).",
+   "expected": {
+      "OK": [
+         [
+            "pong",
+            "pongme 1!"
+         ],
+         [
+            "pong",
+            "pongme 2!"
+         ],
+         [
+            "message",
+            "fragment1fragment2fragment3fragment4fragment5",
+            false
+         ]
+      ]
+   },
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: UF+masW0DIp4VPQ2nrDozA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7RPiohJzdtWB1Y4UrSPG/DnbKTo=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=YFr92zA3dFnboIbRGP-LSW2gcihqRjh9S0wM3JfgbxJmTmMbwhPaeC-f8aAYYH6dvh3MnLuOsPOYkB5Qc9pV_Q; Expires=Fri, 30 Apr 2027 09:31:13 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:31:13 GMT\r\n\r\n",
+   "id": "5.20",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [
+      [
+         "pong",
+         "pongme 1!"
+      ],
+      [
+         "pong",
+         "pongme 2!"
+      ],
+      [
+         "message",
+         "fragment1fragment2fragment3fragment4fragment5",
+         false
+      ]
+   ],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "1": 1,
+      "8": 1,
+      "10": 2
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "11": 2,
+      "47": 1,
+      "496": 1
+   },
+   "started": "2026-04-30T09:31:13.255Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 4,
+      "1": 1,
+      "8": 1,
+      "9": 2
+   },
+   "txOctetStats": {
+      "8": 1,
+      "15": 7,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment1"
+         ],
+         1,
+         false,
+         0,
+         "d6c8fd93",
+         null,
+         null,
+         true
+      ],
+      [
+         "TO",
+         [
+            15,
+            "0189d6c8fd93b0ba9cf4bbad93e7e7"
+         ],
+         true
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment2"
+         ],
+         0,
+         false,
+         0,
+         "da2f2bf1",
+         null,
+         null,
+         true
+      ],
+      [
+         "TF",
+         [
+            9,
+            "pongme 1!"
+         ],
+         9,
+         true,
+         0,
+         "285791a1",
+         null,
+         null,
+         true
+      ],
+      [
+         "CT",
+         1,
+         null
+      ],
+      [
+         "TO",
+         [
+            15,
+            "0089da2f2bf1bc5d4a96b74a4585e8"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8989285791a15838ffc64532b19009"
+         ],
+         true
+      ],
+      [
+         "RO",
+         [
+            11,
+            "8a09706f6e676d65203121"
+         ]
+      ],
+      [
+         "RF",
+         [
+            9,
+            "pongme 1!"
+         ],
+         10,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "CTE",
+         null
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment3"
+         ],
+         0,
+         false,
+         0,
+         "4cfd902e",
+         null,
+         null,
+         true
+      ],
+      [
+         "TO",
+         [
+            15,
+            "00894cfd902e2a8ff1492198fe5a7f"
+         ],
+         true
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment4"
+         ],
+         0,
+         false,
+         0,
+         "07b7bef2",
+         null,
+         null,
+         true
+      ],
+      [
+         "TF",
+         [
+            9,
+            "pongme 2!"
+         ],
+         9,
+         true,
+         0,
+         "bd432481",
+         null,
+         null,
+         true
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment5"
+         ],
+         0,
+         true,
+         0,
+         "8514fe68",
+         null,
+         null,
+         true
+      ],
+      [
+         "TI",
+         1
+      ],
+      [
+         "TO",
+         [
+            15,
+            "008907b7bef261c5df956ad2d08633"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8989bd432481cd2c4ae6d02604b39c"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            15,
+            "80898514fe68e3669f0fe871901cb0"
+         ],
+         true
+      ],
+      [
+         "RO",
+         [
+            11,
+            "8a09706f6e676d65203221"
+         ]
+      ],
+      [
+         "RF",
+         [
+            9,
+            "pongme 2!"
+         ],
+         10,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "RO",
+         [
+            47,
+            "812d667261676d656e7431667261676d656e7432667261676d656e7433667261676d656e7434667261676d656e7435"
+         ]
+      ],
+      [
+         "RF",
+         [
+            45,
+            "fragment1fragment2fragment3fragment4fragment5"
+         ],
+         1,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "f0103d43",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882f0103d43f3f8"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}

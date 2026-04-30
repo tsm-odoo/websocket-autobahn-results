@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="https://autobahn-testsuite.readthedocs.io/" title="Autobahn WebSocket Testsuite"><img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="https://autobahn-testsuite.readthedocs.io/"           title="Autobahn WebSocket">          <img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 9.4.1</b></span> : Pass - <span style="font-size: 0.9em;"><b>767</b> ms @ 2026-04-30T07:46:04.904Z</a></p>
+      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 9.4.1</b></span> : Pass - <span style="font-size: 0.9em;"><b>826</b> ms @ 2026-04-30T09:27:20.568Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 64.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Receive echo'ed binary message (with payload as sent).</p>
 
@@ -221,17 +221,17 @@ Upgrade: WebSocket
 Connection: Upgrade
 Pragma: no-cache
 Cache-Control: no-cache
-Sec-WebSocket-Key: KVpTdURb8+8YSesKf4rXLg==
+Sec-WebSocket-Key: k8ruDXRg0ndZWkzJvvnBOQ==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 SWITCHING PROTOCOLS
-date: Thu, 30 Apr 2026 07:46:04 GMT
+date: Thu, 30 Apr 2026 09:27:20 GMT
 upgrade: websocket
 connection: Upgrade
-sec-websocket-accept: eauVOl8mxNnOEL8JvLQ5qE4+ymE=
+sec-websocket-accept: 6aiJ2Nl2aHNRqEXcLmxS+2iGFFI=
 content-type: text/html; charset=utf-8
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST
-set-cookie: session_id=47OcJLs63DqX7TdeZIv0QVdRrUG1JYJCkjJIEg1byDySAufzqdRnnh_iS3pvQGgi7BDco5w1BV2-1WFH8xePbQ; Expires=Fri, 30 Apr 2027 07:46:04 GMT; Max-Age=604800; HttpOnly; Path=/
+set-cookie: session_id=dhjaG1J9DwXrzWRLR70teZznlSbRsYLKdO4qe_uyDpEiwatxtn0NNS3c98_K2Nu8a-UTrGa4Z76CxvnDCT6yjQ; Expires=Fri, 30 Apr 2027 09:27:20 GMT; Max-Age=604800; HttpOnly; Path=/
 x-content-type-options: nosniff
 server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
       <br/><hr/>
@@ -257,17 +257,19 @@ server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
       <table>
          <tr class="stats_header"><td>Chop Size</td><td>Count</td><td>Octets</td></tr>
          <tr class="stats_row"><td>4</td><td>1</td><td>4</td></tr>
-         <tr class="stats_row"><td>512</td><td>1</td><td>512</td></tr>
          <tr class="stats_row"><td>548</td><td>1</td><td>548</td></tr>
-         <tr class="stats_row"><td>35840</td><td>2</td><td>71680</td></tr>
-         <tr class="stats_row"><td>37376</td><td>1</td><td>37376</td></tr>
-         <tr class="stats_row"><td>54865</td><td>1</td><td>54865</td></tr>
-         <tr class="stats_row"><td>62358</td><td>5</td><td>311790</td></tr>
-         <tr class="stats_row"><td>62411</td><td>1</td><td>62411</td></tr>
-         <tr class="stats_row"><td>62464</td><td>4</td><td>249856</td></tr>
-         <tr class="stats_row"><td>63488</td><td>1</td><td>63488</td></tr>
-         <tr class="stats_row"><td>65536</td><td>51</td><td>3342336</td></tr>
-         <tr class="stats_total"><td>Total</td><td>69</td><td>4194866</td></tr>
+         <tr class="stats_row"><td>3072</td><td>1</td><td>3072</td></tr>
+         <tr class="stats_row"><td>29696</td><td>1</td><td>29696</td></tr>
+         <tr class="stats_row"><td>32768</td><td>6</td><td>196608</td></tr>
+         <tr class="stats_row"><td>32821</td><td>1</td><td>32821</td></tr>
+         <tr class="stats_row"><td>42531</td><td>1</td><td>42531</td></tr>
+         <tr class="stats_row"><td>42743</td><td>1</td><td>42743</td></tr>
+         <tr class="stats_row"><td>42902</td><td>1</td><td>42902</td></tr>
+         <tr class="stats_row"><td>43008</td><td>2</td><td>86016</td></tr>
+         <tr class="stats_row"><td>47962</td><td>1</td><td>47962</td></tr>
+         <tr class="stats_row"><td>65483</td><td>1</td><td>65483</td></tr>
+         <tr class="stats_row"><td>65536</td><td>55</td><td>3604480</td></tr>
+         <tr class="stats_total"><td>Total</td><td>73</td><td>4194866</td></tr>
       </table>
       <h3>Octets Transmitted by Chop Size</h3>
       <table>
@@ -299,11 +301,11 @@ server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
          <pre class="wirelog_tx_octets">000 TX OCTETS: 474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453</pre>
          <pre class="wirelog_tx_octets">               756974652f32352e31302e312d30 ...</pre>
          <pre class="wirelog_rx_octets">001 RX OCTETS: 485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c203330204170</pre>
-         <pre class="wirelog_rx_octets">               7220323032362030373a34363a30 ...</pre>
+         <pre class="wirelog_rx_octets">               7220323032362030393a32373a32 ...</pre>
          <pre class="wirelog_kill_after">002 CLOSE CONNECTION AFTER 100.000000 sec</pre>
-         <pre class="wirelog_tx_frame">003 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=e1c76eaf, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_tx_frame">003 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=ded042af, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>
-         <pre class="wirelog_tx_octets">004 TX OCTETS: 8882e1c76eafe22f</pre>
+         <pre class="wirelog_tx_octets">004 TX OCTETS: 8882ded042afdd38</pre>
          <pre class="wirelog_rx_octets">005 RX OCTETS: 880203e8</pre>
          <pre class="wirelog_rx_frame">006 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=False, MASK=None</pre>
          <pre class="wirelog_rx_frame">               0x03e8</pre>

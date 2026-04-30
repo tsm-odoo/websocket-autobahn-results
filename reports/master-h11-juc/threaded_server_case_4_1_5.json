@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 4vV4uguEM8FnBPaCiPGfJA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: 8K30mY7hQ3+C9hVY+7uijZuxkfc=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=fq3xPT3rTkjIboKIXM_5To7yRp004UKu11Hcr7pUO1yv9nLSAzRMLx-vdUH3I9KPcaHQDn-Z5BgHlbpze7zglg; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: Ez4lqoIJaAdHIXZAK2zqpQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:05 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: pbGLcEk5E11UaZ8Saw4+3j7ez5o=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=4aieBnA4sTl1xkbAFRzbbASSgjWO8U9j9m2bPBSbDoxy4Ir-x_gKTDVLTjdoifa9D1ygmtMH5Wg6Ie01lZt0vA; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "4.1.5",
    "isServer": false,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "27": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.557Z",
+   "started": "2026-04-30T09:27:05.960Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -86,7 +86,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -98,7 +98,7 @@
          1,
          true,
          0,
-         "7af7e560",
+         "eb720fab",
          null,
          1,
          false
@@ -120,7 +120,7 @@
          7,
          true,
          0,
-         "e26ec7a1",
+         "2de80ef7",
          null,
          1,
          false
@@ -134,7 +134,7 @@
          9,
          true,
          0,
-         "fb6c0b58",
+         "de5ab189",
          null,
          1,
          false
@@ -155,7 +155,7 @@
          "TO",
          [
             1,
-            "7a"
+            "eb"
          ],
          true
       ],
@@ -163,7 +163,7 @@
          "TO",
          [
             1,
-            "f7"
+            "72"
          ],
          true
       ],
@@ -171,7 +171,7 @@
          "TO",
          [
             1,
-            "e5"
+            "0f"
          ],
          true
       ],
@@ -179,7 +179,7 @@
          "TO",
          [
             1,
-            "60"
+            "ab"
          ],
          true
       ],
@@ -187,55 +187,7 @@
          "TO",
          [
             1,
-            "32"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "92"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "89"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "0c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "15"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "db"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "c5"
+            "a3"
          ],
          true
       ],
@@ -251,7 +203,7 @@
          "TO",
          [
             1,
-            "15"
+            "63"
          ],
          true
       ],
@@ -259,7 +211,7 @@
          "TO",
          [
             1,
-            "85"
+            "c7"
          ],
          true
       ],
@@ -267,7 +219,7 @@
          "TO",
          [
             1,
-            "89"
+            "84"
          ],
          true
       ],
@@ -275,7 +227,7 @@
          "TO",
          [
             1,
-            "04"
+            "5e"
          ],
          true
       ],
@@ -283,7 +235,55 @@
          "TO",
          [
             1,
-            "5b"
+            "2f"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "dc"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "84"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "00"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "63"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "cf"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "ca"
          ],
          true
       ],
@@ -326,7 +326,7 @@
          "TO",
          [
             1,
-            "e2"
+            "2d"
          ],
          true
       ],
@@ -358,7 +358,7 @@
          8,
          true,
          0,
-         "aa21ceca",
+         "bc9ec1c9",
          null,
          null,
          false
@@ -367,7 +367,7 @@
          "TO",
          [
             1,
-            "6e"
+            "e8"
          ],
          true
       ],
@@ -375,7 +375,7 @@
          "TO",
          [
             1,
-            "c7"
+            "0e"
          ],
          true
       ]

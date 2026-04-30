@@ -1,0 +1,543 @@
+{
+   "agent": "Threaded Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 58,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send unfragmented Text Message after Continuation Frame with FIN = false, where there is nothing to continue, sent in octet-wise chops.",
+   "droppedByMe": false,
+   "duration": 6,
+   "expectation": "The connection is failed immediately, since there is no message to continue.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: ix7FyPpGdIPHs5r/OmP7/w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nServer: Werkzeug/3.0.1 Python/3.12.1\r\nDate: Thu, 30 Apr 2026 09:30:50 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7zM+tl6PWk91yAH+7m2JlSQdFzg=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=plCJUTwxHvieRreycQ6Ra5D34I22L1Rxar9n3j4qAw8fWErt1KH1UteUF5gBbTklMAqFOAjKD-13riQqu9YlbA; Expires=Fri, 30 Apr 2027 09:30:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\n\r\n",
+   "id": "5.14",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1002,
+   "remoteCloseReason": "Unexpected continuation frame",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "33": 1,
+      "534": 1
+   },
+   "started": "2026-04-30T09:30:50.274Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 1,
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "1": 49,
+      "8": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            534,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a5365727665723a205765726b7a6575672f332e302e3120507974686f6e2f ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            24,
+            "non-continuation payload"
+         ],
+         0,
+         false,
+         0,
+         "3433c7da",
+         null,
+         1,
+         false
+      ],
+      [
+         "TO",
+         [
+            1,
+            "00"
+         ],
+         true
+      ],
+      [
+         "TF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         "795b3a55",
+         null,
+         1,
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "TO",
+         [
+            1,
+            "98"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "34"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "33"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "c7"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "da"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5a"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5c"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a9"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "f7"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "57"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5c"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a9"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "ae"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5d"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5d"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "b2"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "bb"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "40"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5a"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a8"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "b4"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "14"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "43"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a6"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a3"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "58"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5c"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "a6"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "be"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "81"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "8d"
+         ],
+         true
+      ],
+      [
+         "RO",
+         [
+            33,
+            "881f03ea556e657870656374656420636f6e74696e756174696f6e206672616d65"
+         ]
+      ],
+      [
+         "RF",
+         [
+            31,
+            "0x03ea556e657870656374656420636f6e74696e756174696f6e206672616d65"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "33194dfa",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            1,
+            "79"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "5b"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "3a"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "55"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "31"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "3e"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "56"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "39"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "16"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "77"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "1a"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "22"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "16"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "29"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "56"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "31"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "58"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            8,
+            "888233194dfa30f1"
+         ],
+         false
+      ]
+   ]
+}

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 15</b> and non-empty payload, then send Ping.",
    "droppedByMe": false,
-   "duration": 7,
+   "duration": 6,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: RN4okWeuUHv3EpCQSkpPYg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: uqXVDvgqlB/vUMJojovUJ8WhdBE=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=LpkN9o9ELmE3YqgHJ6Rz0ej2y5TXdMaRTyKzjgrOE04sd2nGDVJSe_ErVQEu--Fp1dpVd0hI185ioPr2oyfAnQ; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: s+ZOjoXH9RZAj4rjeKMqtg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:05 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: wlDjULdAmzD5NnWaWpzQHrvOc/o=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=D5BFKp7ZK65xes2ETlCZvif1Yy64KQLS6TcjJUVQE7rWwXGtEOn4_80T-1JvlTlzDg3MxRdb4rkYdBSKb6rMag; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "4.2.5",
    "isServer": false,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "28": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.597Z",
+   "started": "2026-04-30T09:27:05.992Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -86,7 +86,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -98,7 +98,7 @@
          1,
          true,
          0,
-         "7d25440f",
+         "e4c26c9a",
          null,
          1,
          false
@@ -120,7 +120,7 @@
          15,
          true,
          0,
-         "52ed8727",
+         "09038910",
          null,
          1,
          false
@@ -134,7 +134,7 @@
          9,
          true,
          0,
-         "e1974a3f",
+         "b819c9de",
          null,
          1,
          false
@@ -155,7 +155,7 @@
          "TO",
          [
             1,
-            "7d"
+            "e4"
          ],
          true
       ],
@@ -163,7 +163,7 @@
          "TO",
          [
             1,
-            "25"
+            "c2"
          ],
          true
       ],
@@ -171,7 +171,7 @@
          "TO",
          [
             1,
-            "44"
+            "6c"
          ],
          true
       ],
@@ -179,7 +179,7 @@
          "TO",
          [
             1,
-            "0f"
+            "9a"
          ],
          true
       ],
@@ -187,7 +187,7 @@
          "TO",
          [
             1,
-            "35"
+            "ac"
          ],
          true
       ],
@@ -195,7 +195,7 @@
          "TO",
          [
             1,
-            "40"
+            "a7"
          ],
          true
       ],
@@ -203,7 +203,7 @@
          "TO",
          [
             1,
-            "28"
+            "00"
          ],
          true
       ],
@@ -211,7 +211,7 @@
          "TO",
          [
             1,
-            "63"
+            "f6"
          ],
          true
       ],
@@ -219,7 +219,7 @@
          "TO",
          [
             1,
-            "12"
+            "8b"
          ],
          true
       ],
@@ -227,7 +227,7 @@
          "TO",
          [
             1,
-            "09"
+            "ee"
          ],
          true
       ],
@@ -235,7 +235,7 @@
          "TO",
          [
             1,
-            "64"
+            "4c"
          ],
          true
       ],
@@ -243,7 +243,7 @@
          "TO",
          [
             1,
-            "78"
+            "ed"
          ],
          true
       ],
@@ -251,7 +251,7 @@
          "TO",
          [
             1,
-            "12"
+            "8b"
          ],
          true
       ],
@@ -259,7 +259,7 @@
          "TO",
          [
             1,
-            "57"
+            "b0"
          ],
          true
       ],
@@ -267,7 +267,7 @@
          "TO",
          [
             1,
-            "28"
+            "00"
          ],
          true
       ],
@@ -275,7 +275,7 @@
          "TO",
          [
             1,
-            "6b"
+            "fe"
          ],
          true
       ],
@@ -283,7 +283,7 @@
          "TO",
          [
             1,
-            "5c"
+            "c5"
          ],
          true
       ],
@@ -326,7 +326,15 @@
          "TO",
          [
             1,
-            "52"
+            "09"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "03"
          ],
          true
       ],
@@ -358,7 +366,7 @@
          8,
          true,
          0,
-         "be23d8fc",
+         "b7766b53",
          null,
          null,
          false
@@ -367,15 +375,7 @@
          "TO",
          [
             1,
-            "ed"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "87"
+            "89"
          ],
          true
       ]

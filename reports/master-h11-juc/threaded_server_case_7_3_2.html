@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="https://autobahn-testsuite.readthedocs.io/" title="Autobahn WebSocket Testsuite"><img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="https://autobahn-testsuite.readthedocs.io/"           title="Autobahn WebSocket">          <img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 7.3.2</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2026-04-30T07:46:02.030Z</a></p>
+      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 7.3.2</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2026-04-30T09:27:17.502Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send a close frame with payload length 1</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Clean close with protocol error or drop TCP.</p>
 
@@ -221,17 +221,17 @@ Upgrade: WebSocket
 Connection: Upgrade
 Pragma: no-cache
 Cache-Control: no-cache
-Sec-WebSocket-Key: 5VGuXWxMwFk9Ef/3ZStkHA==
+Sec-WebSocket-Key: mrbKUjYVtCAE+qJYsGRDIg==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 SWITCHING PROTOCOLS
-date: Thu, 30 Apr 2026 07:46:02 GMT
+date: Thu, 30 Apr 2026 09:27:17 GMT
 upgrade: websocket
 connection: Upgrade
-sec-websocket-accept: h3R1z1VYiaY/ckrWlgz3muOKABw=
+sec-websocket-accept: E0q49GbqVqWbRVQXGwcnxKvIiLM=
 content-type: text/html; charset=utf-8
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST
-set-cookie: session_id=T4CxnHeUiVLl-UtuOQgPg2xPkMmSmkGFuJLkcKnlcqMJY2ZE9dars745LaFo7zjSUneXjJU8BAM62LJnSqd9uA; Expires=Fri, 30 Apr 2027 07:46:02 GMT; Max-Age=604800; HttpOnly; Path=/
+set-cookie: session_id=nO0elPpptSazZIqx5-REF3Kjif-4DU15Kj0sQLYgedsoM4SVxiY31PYSu1oM9v6xLd4kKT8ba6E-CbWcuo45qQ; Expires=Fri, 30 Apr 2027 09:27:17 GMT; Max-Age=604800; HttpOnly; Path=/
 x-content-type-options: nosniff
 server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
       <br/><hr/>
@@ -283,10 +283,10 @@ server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
          <pre class="wirelog_tx_octets">000 TX OCTETS: 474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453</pre>
          <pre class="wirelog_tx_octets">               756974652f32352e31302e312d30 ...</pre>
          <pre class="wirelog_rx_octets">001 RX OCTETS: 485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c203330204170</pre>
-         <pre class="wirelog_rx_octets">               7220323032362030373a34363a30 ...</pre>
-         <pre class="wirelog_tx_frame">002 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=1, MASK=d7c931cd, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_rx_octets">               7220323032362030393a32373a31 ...</pre>
+         <pre class="wirelog_tx_frame">002 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=1, MASK=1b242b98, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               a</pre>
-         <pre class="wirelog_tx_octets">003 TX OCTETS: 8881d7c931cdb6</pre>
+         <pre class="wirelog_tx_octets">003 TX OCTETS: 88811b242b987a</pre>
          <pre class="wirelog_kill_after">004 FAIL CONNECTION AFTER 1.000000 sec</pre>
          <pre class="wirelog_tcp_closed_by_peer">005 TCP DROPPED BY PEER</pre>
       </div>

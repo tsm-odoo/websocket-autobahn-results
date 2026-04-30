@@ -1,0 +1,255 @@
+{
+   "agent": "Threaded Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 61,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "The connection is failed immediately, since there is no message to continue.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 5LxQE1JHsqXUZk9shJQkJQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nServer: Werkzeug/3.0.1 Python/3.12.1\r\nDate: Thu, 30 Apr 2026 09:30:50 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Oxm+HG+9Fk3nQ+yDYxHCAfCXi1k=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=gpLfsnEPRYLSUkIh6fKS42TYzB5ahERcpgi3ceHGE6KcHsNV23nnXUosW11M5j_WKFvYNNhdWoyZY11XWNZ-ig; Expires=Fri, 30 Apr 2027 09:30:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\n\r\n",
+   "id": "5.17",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1002,
+   "remoteCloseReason": "Unexpected continuation frame",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "33": 1,
+      "534": 1
+   },
+   "started": "2026-04-30T09:30:50.342Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 4,
+      "1": 2,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "15": 6,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            534,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a5365727665723a205765726b7a6575672f332e302e3120507974686f6e2f ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment1"
+         ],
+         0,
+         true,
+         0,
+         "907937ac",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8089907937acf60b56cbfd1c59d8a1"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment2"
+         ],
+         1,
+         false,
+         0,
+         "55b3dbf1",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "018955b3dbf133c1ba9638d6b58567"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment3"
+         ],
+         0,
+         true,
+         0,
+         "83e02134",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "808983e02134e5924053ee854f40b0"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment1"
+         ],
+         0,
+         true,
+         0,
+         "81282887",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "808981282887e75a49e0ec4d46f3b0"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment2"
+         ],
+         1,
+         false,
+         0,
+         "27ffe18a",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "018927ffe18a418d80ed4a9a8ffe15"
+         ],
+         false
+      ],
+      [
+         "TF",
+         [
+            9,
+            "fragment3"
+         ],
+         0,
+         true,
+         0,
+         "151280a6",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            15,
+            "8089151280a67360e1c17877eed226"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "RO",
+         [
+            33,
+            "881f03ea556e657870656374656420636f6e74696e756174696f6e206672616d65"
+         ]
+      ],
+      [
+         "RF",
+         [
+            31,
+            "0x03ea556e657870656374656420636f6e74696e756174696f6e206672616d65"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "5ff276d4",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "88825ff276d45c1a"
+         ],
+         false
+      ]
+   ]
+}

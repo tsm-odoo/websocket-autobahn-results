@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="https://autobahn-testsuite.readthedocs.io/" title="Autobahn WebSocket Testsuite"><img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="https://autobahn-testsuite.readthedocs.io/"           title="Autobahn WebSocket">          <img src="https://autobahn-testsuite.readthedocs.io/en/latest/_static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 3.3</b></span> : Pass - <span style="font-size: 0.9em;"><b>2</b> ms @ 2026-04-30T07:45:50.499Z</a></p>
+      <p class="case case_ok">Threaded Server - <span style="font-size: 1.3em;"><b>Case 3.3</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2026-04-30T09:27:05.904Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.</p>
 
@@ -221,17 +221,17 @@ Upgrade: WebSocket
 Connection: Upgrade
 Pragma: no-cache
 Cache-Control: no-cache
-Sec-WebSocket-Key: fyk4/jJ/9C3mtz63L6gXBQ==
+Sec-WebSocket-Key: 3/Vbqvgvape4ajU+l7tpAQ==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 SWITCHING PROTOCOLS
-date: Thu, 30 Apr 2026 07:45:50 GMT
+date: Thu, 30 Apr 2026 09:27:05 GMT
 upgrade: websocket
 connection: Upgrade
-sec-websocket-accept: UwTepzoNwI+eaYLmFH7+5IJWcKA=
+sec-websocket-accept: 54CwbDBlcgP65A9iE4NM+28FdtI=
 content-type: text/html; charset=utf-8
 access-control-allow-origin: *
 access-control-allow-methods: GET, POST
-set-cookie: session_id=PW9NaEVFHYhWinegaIDyzAcwcfMWVQ272Y9Im0OVsTXY0FvrnNFPHryT-v2Wn46MwgCYXVV__tTNXJd_B6Ig9A; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/
+set-cookie: session_id=nFKW1SNQsYVDwqZACARPvGVzVLkTUEJ64LbUB1VUqxxt0yl-ZYioB1XX2vd-sdOm2-itUoZw392H3PTLWM40QA; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/
 x-content-type-options: nosniff
 server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
       <br/><hr/>
@@ -291,25 +291,25 @@ server: odoo/19.3 python-h11/0.16.0 CPython/3.12.1</pre>
          <pre class="wirelog_tx_octets">000 TX OCTETS: 474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453</pre>
          <pre class="wirelog_tx_octets">               756974652f32352e31302e312d30 ...</pre>
          <pre class="wirelog_rx_octets">001 RX OCTETS: 485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c203330204170</pre>
-         <pre class="wirelog_rx_octets">               7220323032362030373a34353a35 ...</pre>
-         <pre class="wirelog_tx_frame_sync">002 TX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASK=2bc745b0, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
+         <pre class="wirelog_rx_octets">               7220323032362030393a32373a30 ...</pre>
+         <pre class="wirelog_tx_frame_sync">002 TX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASK=9b68aafe, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
          <pre class="wirelog_tx_frame_sync">               Hello, world!</pre>
-         <pre class="wirelog_tx_octets_sync">003 TX OCTETS: 818d2bc745b063a229dc44eb65c744b529d40a</pre>
-         <pre class="wirelog_tx_frame_sync">004 TX FRAME : OPCODE=1, FIN=True, RSV=3, PAYLOAD-LEN=13, MASK=1e457d5f, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
+         <pre class="wirelog_tx_octets_sync">003 TX OCTETS: 818d9b68aafed30dc692f4448a89f41ac69aba</pre>
+         <pre class="wirelog_tx_frame_sync">004 TX FRAME : OPCODE=1, FIN=True, RSV=3, PAYLOAD-LEN=13, MASK=dbcd83d8, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
          <pre class="wirelog_tx_frame_sync">               Hello, world!</pre>
-         <pre class="wirelog_tx_frame_sync">005 TX FRAME : OPCODE=9, FIN=True, RSV=0, PAYLOAD-LEN=0, MASK=d85b36e2, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
+         <pre class="wirelog_tx_frame_sync">005 TX FRAME : OPCODE=9, FIN=True, RSV=0, PAYLOAD-LEN=0, MASK=d6f67204, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=True</pre>
          <pre class="wirelog_kill_after">006 FAIL CONNECTION AFTER 1.000000 sec</pre>
-         <pre class="wirelog_tx_octets_sync">007 TX OCTETS: b18d1e457d5f5620113371695d287137113b3f</pre>
-         <pre class="wirelog_tx_octets_sync">008 TX OCTETS: 8980d85b36e2</pre>
+         <pre class="wirelog_tx_octets_sync">007 TX OCTETS: b18ddbcd83d893a8efb4b4e1a3afb4bfefbcfa</pre>
+         <pre class="wirelog_tx_octets_sync">008 TX OCTETS: 8980d6f67204</pre>
          <pre class="wirelog_rx_octets">009 RX OCTETS: 810d48656c6c6f2c20776f726c6421</pre>
          <pre class="wirelog_rx_frame">010 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=False, MASK=None</pre>
          <pre class="wirelog_rx_frame">               Hello, world!</pre>
          <pre class="wirelog_rx_octets">011 RX OCTETS: 881d03ea52657365727665642062697473206d75737420626520756e736574</pre>
          <pre class="wirelog_rx_frame">012 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=29, MASKED=False, MASK=None</pre>
          <pre class="wirelog_rx_frame">               0x03ea52657365727665642062697473206d75737420626520756e736574</pre>
-         <pre class="wirelog_tx_frame">013 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=f44f8426, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_tx_frame">013 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=3c5512c2, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>
-         <pre class="wirelog_tx_octets">014 TX OCTETS: 8882f44f8426f7a7</pre>
+         <pre class="wirelog_tx_octets">014 TX OCTETS: 88823c5512c23fbd</pre>
          <pre class="wirelog_tcp_closed_by_peer">015 TCP DROPPED BY PEER</pre>
       </div>
       <br/><hr/>

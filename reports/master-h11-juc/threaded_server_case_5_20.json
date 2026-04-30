@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Same as Case 5.19, but send all frames with SYNC = True.\n   Note, this does not change the octets sent in any way, only how the stream\n   is chopped up on the wire.",
    "droppedByMe": false,
-   "duration": 1011,
+   "duration": 1005,
    "expectation": "Same as Case 5.19. Implementations must be agnostic to how\n   octet stream is chopped up on wire (must be TCP clean).",
    "expected": {
       "OK": [
@@ -35,8 +35,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: mTcz2lvFMEWsxV6rbA1TNQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:51 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: lSrS2IcfE+0aLnVuPz8lI/1R8vk=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=VAHvfFfcxvbz08Stk-JOTeZfjBTo7hN423WSRTp80kZv_ACanK6DI8zRfJJhfv_uc8HHuwBfY8PFVF0wAbG02Q; Expires=Fri, 30 Apr 2027 07:45:51 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: ajNAGzkNmBQ4dauCdwh47w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:07 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: /xQ4PTab46IlJPBt7P/2+gPtkDk=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=lsJ19T9Ut3fjchnpCTzfvY6g1RD9PSIs12OiHuiMsx-QD-Hb9ayV0gkg8qd1STefE3p2hklW7XGmGc1vGAMC8g; Expires=Fri, 30 Apr 2027 09:27:07 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "5.20",
    "isServer": false,
    "localCloseCode": 1000,
@@ -73,7 +73,7 @@
       "47": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:51.832Z",
+   "started": "2026-04-30T09:27:07.227Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -104,7 +104,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -116,7 +116,7 @@
          1,
          false,
          0,
-         "1a232468",
+         "82a70132",
          null,
          null,
          true
@@ -125,7 +125,7 @@
          "TO",
          [
             15,
-            "01891a2324687c51450f77464a1c2b"
+            "018982a70132e4d56055efc26f46b3"
          ],
          true
       ],
@@ -138,7 +138,7 @@
          0,
          false,
          0,
-         "3e3ca155",
+         "f0e85d39",
          null,
          null,
          true
@@ -152,7 +152,7 @@
          9,
          true,
          0,
-         "9c5a809d",
+         "af6077d4",
          null,
          null,
          true
@@ -166,7 +166,7 @@
          "TO",
          [
             15,
-            "00893e3ca155584ec0325359cf210c"
+            "0089f0e85d39969a3c5e9d8d334dc2"
          ],
          true
       ],
@@ -174,7 +174,7 @@
          "TO",
          [
             15,
-            "89899c5a809dec35eefaf13fa0acbd"
+            "8989af6077d4df0f19b3c20557e58e"
          ],
          true
       ],
@@ -210,7 +210,7 @@
          0,
          false,
          0,
-         "35c5b112",
+         "bcbb3210",
          null,
          null,
          true
@@ -219,7 +219,7 @@
          "TO",
          [
             15,
-            "008935c5b11253b7d07558a0df6606"
+            "0089bcbb3210dac95377d1de5c648f"
          ],
          true
       ],
@@ -232,7 +232,7 @@
          0,
          false,
          0,
-         "22794ad6",
+         "c65f0e9b",
          null,
          null,
          true
@@ -246,7 +246,7 @@
          9,
          true,
          0,
-         "57a21ee5",
+         "c7c7c242",
          null,
          null,
          true
@@ -260,7 +260,7 @@
          0,
          true,
          0,
-         "0d3901b7",
+         "ed19bc5b",
          null,
          null,
          true
@@ -273,7 +273,7 @@
          "TO",
          [
             15,
-            "008922794ad6440b2bb14f1c24a216"
+            "0089c65f0e9ba02d6ffcab3a60eff2"
          ],
          true
       ],
@@ -281,7 +281,7 @@
          "TO",
          [
             15,
-            "898957a21ee527cd70823ac73ed776"
+            "8989c7c7c242b7a8ac25aaa2e270e6"
          ],
          true
       ],
@@ -289,7 +289,7 @@
          "TO",
          [
             15,
-            "80890d3901b76b4b60d0605c6fc338"
+            "8089ed19bc5b8b6bdd3c807cd22fd8"
          ],
          true
       ],
@@ -340,7 +340,7 @@
          8,
          true,
          0,
-         "c7f405d8",
+         "6efefe0e",
          null,
          null,
          false
@@ -349,7 +349,7 @@
          "TO",
          [
             8,
-            "8882c7f405d8c41c"
+            "88826efefe0e6d16"
          ],
          false
       ],

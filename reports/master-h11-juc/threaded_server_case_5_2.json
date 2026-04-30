@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: cshauWffmCKFOLzYxtdAmg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: RQ1bR4FANIW0Kv1ZfdW1ArPqfWU=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=Kw0VeIc45co6OdcNXqKqXIRGQqc6Z9m0dt2K-N0i5A0mkvLZtX2HTlssBNTI4pn4XFipN7MOeuM7yHUNOUgVlg; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 84On9hrELAfmoM2gZXcdwQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:06 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: lSHOUsg4ooYrGZQS09fz42kLzGw=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=OSrpm31WzItA-acL3Y-p325MdboNPr6qIRKpdnNWWMQ6Rz0pwiVu9PzCfq6BHpMLM9r-aqRJ8GdilrDlu3Hr2w; Expires=Fri, 30 Apr 2027 09:27:06 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "5.2",
    "isServer": false,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "39": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.614Z",
+   "started": "2026-04-30T09:27:06.009Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -71,7 +71,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -83,7 +83,7 @@
          10,
          false,
          0,
-         "ba26dfca",
+         "ce101340",
          null,
          null,
          false
@@ -92,7 +92,7 @@
          "TO",
          [
             15,
-            "0a89ba26dfcadc54beadd743b1be8b"
+            "0a89ce101340a8627227a3757d34ff"
          ],
          false
       ],
@@ -105,7 +105,7 @@
          0,
          true,
          0,
-         "63c2815a",
+         "8a02adf7",
          null,
          null,
          false
@@ -114,7 +114,7 @@
          "TO",
          [
             15,
-            "808963c2815a05b0e03d0ea7ef2e51"
+            "80898a02adf7ec70cc90e767c383b8"
          ],
          false
       ],
@@ -150,7 +150,7 @@
          8,
          true,
          0,
-         "f6b5c646",
+         "c55ea5a5",
          null,
          null,
          false
@@ -159,7 +159,7 @@
          "TO",
          [
             8,
-            "8882f6b5c646f55d"
+            "8882c55ea5a5c6b6"
          ],
          false
       ]

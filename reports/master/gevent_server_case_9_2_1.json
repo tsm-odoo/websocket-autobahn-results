@@ -1,0 +1,123 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 253,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send binary message message with payload of length 64 * 2**10 (64k).",
+   "droppedByMe": false,
+   "duration": 3,
+   "expectation": "Receive echo'ed binary message (with payload as sent).",
+   "expected": {},
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: hX/fyQg1MYJoXe8Tfu9F9A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9+boOwJR2k3uJyQBsfezUNrNBSM=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=J-1JwRPoUFkm0PDjUoxLWfOOQvaHj8BBGNAt8rn08XZTjT70cWW97gUZBpPHa8cbL64oIY7TJzIv2iO6jZCfaA; Expires=Fri, 30 Apr 2027 09:31:24 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:31:24 GMT\r\n\r\n",
+   "id": "9.2.1",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1000,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": true,
+   "result": "Received binary message of length 65536.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "2": 1,
+      "8": 1
+   },
+   "rxOctetStats": {
+      "4": 1,
+      "10": 1,
+      "496": 1,
+      "65536": 1
+   },
+   "started": "2026-04-30T09:31:24.635Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "2": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "251": 1,
+      "65550": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TI",
+         10
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "54db8ae8",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "888254db8ae85733"
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            4,
+            "880203e8"
+         ]
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ]
+   ]
+}

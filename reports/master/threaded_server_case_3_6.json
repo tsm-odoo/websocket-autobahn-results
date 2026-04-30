@@ -1,0 +1,144 @@
+{
+   "agent": "Threaded Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 33,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send Ping with <b>RSV = 6</b>.",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "The connection is failed immediately, since RSV must be 0.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: pp25KLQHfUU2p/3g0J7H2g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nServer: Werkzeug/3.0.1 Python/3.12.1\r\nDate: Thu, 30 Apr 2026 09:30:49 GMT\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Y+it20kGZ1JiWGXXbhSP+b3vYXc=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=Pvllc7V2CoIJJTDiybNIkav3R5U8zuHsit3B_cEGRefGfE-beMbBBQvkLaYHwHNo4tt5nLT5GomxThp4R7axFA; Expires=Fri, 30 Apr 2027 09:30:49 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\n\r\n",
+   "id": "3.6",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1002,
+   "remoteCloseReason": "Reserved bits must be unset",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "31": 1,
+      "534": 1
+   },
+   "started": "2026-04-30T09:30:49.981Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "2": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "19": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            534,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a5365727665723a205765726b7a6575672f332e302e3120507974686f6e2f ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         2,
+         true,
+         6,
+         "8fa996d2",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            19,
+            "e28d8fa996d2c7ccfabee085b6a5e0dbfab6ae"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "RO",
+         [
+            31,
+            "881d03ea52657365727665642062697473206d75737420626520756e736574"
+         ]
+      ],
+      [
+         "RF",
+         [
+            29,
+            "0x03ea52657365727665642062697473206d75737420626520756e736574"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "a108f112",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882a108f112a2e0"
+         ],
+         false
+      ]
+   ]
+}

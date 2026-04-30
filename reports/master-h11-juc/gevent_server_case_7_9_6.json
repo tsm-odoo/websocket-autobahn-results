@@ -1,0 +1,98 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 241,
+   "closedByMe": true,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send close with invalid close code 1016",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "Clean close with protocol error code or drop TCP",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": true,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: pDSL6V9qYMJ1UBkKLIBkyg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: lA8s800iJRLhhGG6cTopLkiQwAM=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=m3yRn06bwbHP4Fj8u6PYsAtGq7RrwU7dp3cBXvc0faP3RKExE_0297-cApzsFFVctW59XDtJ8Gob57kSD2FI-w; Expires=Fri, 30 Apr 2027 09:27:37 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:27:37 GMT\r\n\r\n",
+   "id": "7.9.6",
+   "isServer": false,
+   "localCloseCode": 1016,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": null,
+   "remoteCloseReason": null,
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {},
+   "rxOctetStats": {
+      "496": 1
+   },
+   "started": "2026-04-30T09:27:37.362Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "251": 1
+   },
+   "wasClean": false,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03f8"
+         ],
+         8,
+         true,
+         0,
+         "1276b1d4",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "88821276b1d4118e"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ]
+   ]
+}

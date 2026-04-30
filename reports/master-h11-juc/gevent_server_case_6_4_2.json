@@ -1,0 +1,234 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "NON-STRICT",
+   "behaviorClose": "OK",
+   "case": 75,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Same as Case 6.4.1, but in 2nd frame, we send only up to and including the octet making the complete payload invalid.\n<br><br>MESSAGE PARTS:<br>\nPART1 = cebae1bdb9cf83cebcceb5f4<br>\nPART2 = 90<br>\nPART3 = 8080656469746564<br>\n",
+   "droppedByMe": false,
+   "duration": 2002,
+   "expectation": "The first frame is accepted, we expect to timeout on the first wait. The 2nd frame should be rejected immediately (fail fast on UTF-8). If we timeout, we expect the connection is failed at least then, since the complete message payload is not valid UTF-8.",
+   "expected": {
+      "NON-STRICT": [
+         [
+            "timeout",
+            "A"
+         ],
+         [
+            "timeout",
+            "B"
+         ]
+      ],
+      "OK": [
+         [
+            "timeout",
+            "A"
+         ]
+      ]
+   },
+   "expectedClose": {
+      "closeCode": [
+         1007
+      ],
+      "closedByMe": false,
+      "closedByWrongEndpointIsFatal": true,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: vGscmos7YHW5kryvpQWiPQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yVcLWagfxydU3NoNIaCeW+ud0LI=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=qZEobC_Vi27NF5OmbL4lJ_bT7glZu5PP_S7kffrHL5lonDZMf-t5O_1t82ZeSXsopP3AafRXkZT8NO9y90ss2Q; Expires=Fri, 30 Apr 2027 09:27:30 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:27:30 GMT\r\n\r\n",
+   "id": "6.4.2",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [
+      [
+         "timeout",
+         "A"
+      ],
+      [
+         "timeout",
+         "B"
+      ]
+   ],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "'utf-8' codec can't decode byte 0xf4 in position 11: invalid continuation byte",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "82": 1,
+      "496": 1
+   },
+   "started": "2026-04-30T09:27:30.149Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "0": 2,
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "7": 1,
+      "8": 1,
+      "14": 1,
+      "18": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            12,
+            "0xcebae1bdb9cf83cebcceb5f4"
+         ],
+         1,
+         false,
+         0,
+         "e02c313c",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            18,
+            "018ce02c313c2e96d08159e3b2f25ce284c8"
+         ],
+         false
+      ],
+      [
+         "CT",
+         1,
+         "A"
+      ],
+      [
+         "CTE",
+         "A"
+      ],
+      [
+         "TF",
+         [
+            1,
+            "0x90"
+         ],
+         0,
+         false,
+         0,
+         "507a6b7f",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            7,
+            "0081507a6b7fc0"
+         ],
+         false
+      ],
+      [
+         "CT",
+         1,
+         "B"
+      ],
+      [
+         "CTE",
+         "B"
+      ],
+      [
+         "TF",
+         [
+            8,
+            "0x8080656469746564"
+         ],
+         0,
+         true,
+         0,
+         "865ffe54",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            14,
+            "8088865ffe5406df9b30ef2b9b30"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "RO",
+         [
+            82,
+            "885003ef277574662d382720636f6465632063616e2774206465636f64652062797465203078663420696e20706f736974696f6e2031313a20696e76616c6964 ..."
+         ]
+      ],
+      [
+         "RF",
+         [
+            80,
+            "0x03ef277574662d382720636f6465632063616e2774206465636f64652062797465203078663420696e20706f736974696f6e2031313a20696e76616c69642063 ..."
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "6e5b6d9b",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "88826e5b6d9b6db3"
+         ],
+         false
+      ]
+   ]
+}

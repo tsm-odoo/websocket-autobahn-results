@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in two fragments, fragmented on UTF-8 code point boundary.<br><br>MESSAGE FRAGMENT 1:<br>Hello-\u00b5@\u00df\u00f6\u00e4<br>48656c6c6f2dc2b540c39fc3b6c3a4<br><br>MESSAGE FRAGMENT 2:<br>\u00fc\u00e0\u00e1-UTF-8!!<br>c3bcc3a0c3a12d5554462d382121",
    "droppedByMe": false,
-   "duration": 2,
+   "duration": 1,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: CauygEjD8hYr13/9jUaBlQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:52 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: Wqy7LV2gWLLnEiw2P/QiJDAKlLs=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=ObknwMouZtXKER2zuvR2vsE_MN1Q37GAbvO3Gpv5zgxKsZ-1TD3cgRS-16lXcmuckLWaZcGMNrFrfs1Uo8wt7g; Expires=Fri, 30 Apr 2027 07:45:52 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: u906irMGdgYeeKpIrCxCjw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:08 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: VRRUdOS91CmGJWt8Z+dHkJSqYG8=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=nEFp3-HiaI-bTNnYz8LH5grhIsPhhmgbfmdbMAiF_YyCSYraYj2v9jZb48HoU3dLiNr-vLVDxrpPr2N8LmzL3A; Expires=Fri, 30 Apr 2027 09:27:08 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "6.2.2",
    "isServer": false,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "31": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:52.907Z",
+   "started": "2026-04-30T09:27:08.273Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -86,7 +86,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -98,7 +98,7 @@
          1,
          false,
          0,
-         "09aa696f",
+         "3944bda4",
          null,
          null,
          false
@@ -107,7 +107,7 @@
          "TO",
          [
             21,
-            "018f09aa696f41cf05036687abda4969f6acbf69cd"
+            "018f3944bda47121d1c856697f11798722678f8719"
          ],
          false
       ],
@@ -120,7 +120,7 @@
          0,
          true,
          0,
-         "7de58857",
+         "08bec136",
          null,
          null,
          false
@@ -129,7 +129,7 @@
          "TO",
          [
             20,
-            "808e7de58857be594bf7be44a50229a3a56f5cc4"
+            "808e08bec136cb020296cb1fec635cf8ec0e299f"
          ],
          false
       ],
@@ -165,7 +165,7 @@
          8,
          true,
          0,
-         "7be1c7ba",
+         "0e746b4d",
          null,
          null,
          false
@@ -174,7 +174,7 @@
          "TO",
          [
             8,
-            "88827be1c7ba7809"
+            "88820e746b4d0d9c"
          ],
          false
       ],

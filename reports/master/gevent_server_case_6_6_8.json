@@ -1,0 +1,145 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 90,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xcebae1bdb9cf83ce",
+   "droppedByMe": false,
+   "duration": 3,
+   "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1007
+      ],
+      "closedByMe": false,
+      "closedByWrongEndpointIsFatal": true,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: JrnEQpn6ZKhgHsRMduJFAQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: xOR1WIIgB5R5jh47jhedvVKnIzw=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=oWAxpHIdPVw9DNcSTGQ1Hr7k-e80FFrW8Ray5gHl86LdLB5GUqmYJuluRtgaN89cfosfqZl9NdBPCuvEPUPUPA; Expires=Fri, 30 Apr 2027 09:31:22 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:31:22 GMT\r\n\r\n",
+   "id": "6.6.8",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "'utf-8' codec can't decode byte 0xce in position 7: unexpected end of data",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "78": 1,
+      "496": 1
+   },
+   "started": "2026-04-30T09:31:22.491Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "14": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            8,
+            "0xcebae1bdb9cf83ce"
+         ],
+         1,
+         true,
+         0,
+         "ac5af9ce",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            14,
+            "8188ac5af9ce62e0187315957a00"
+         ],
+         false
+      ],
+      [
+         "KL",
+         0.5
+      ],
+      [
+         "RO",
+         [
+            78,
+            "884c03ef277574662d382720636f6465632063616e2774206465636f64652062797465203078636520696e20706f736974696f6e20373a20756e657870656374 ..."
+         ]
+      ],
+      [
+         "RF",
+         [
+            76,
+            "0x03ef277574662d382720636f6465632063616e2774206465636f64652062797465203078636520696e20706f736974696f6e20373a20756e6578706563746564 ..."
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "af7ac52d",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882af7ac52dac92"
+         ],
+         false
+      ]
+   ]
+}

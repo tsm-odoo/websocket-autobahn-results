@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1k.",
    "droppedByMe": false,
-   "duration": 142,
+   "duration": 122,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: LKPzK0HQ9OpbjJZ/TVShWg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:46:04 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: HsvGtSgZAbsRMbf2q310YlCupFQ=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=0s8v1_a0jd7UPG1Zvc9e4NzEwxEH30fhIlkDDJwLSzYp9ew3825f9YYh2MRobXY_9n65g3p1puKigidvq1B8Qg; Expires=Fri, 30 Apr 2027 07:46:04 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: +TOIJMuNtC2sKFRJ2UYEXw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:20 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: hfdInPxRaFV7t/u4pRZgfLoP6G4=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=JUjODjeUu-vCaeiEyv41sZrqdXkyiRxk6_6wYBvADJZ-gvjVbhWE555YR_RXKfMR4aHKWvT-78bQP5DW2OcMdA; Expires=Fri, 30 Apr 2027 09:27:20 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "9.3.3",
    "isServer": false,
    "localCloseCode": 1000,
@@ -39,16 +39,13 @@
    "rxOctetStats": {
       "4": 1,
       "548": 1,
-      "29696": 9,
-      "32768": 3,
-      "45056": 1,
-      "49162": 1,
-      "59392": 8,
-      "62464": 1,
-      "63488": 7,
-      "65536": 42
+      "29696": 3,
+      "36362": 1,
+      "56832": 1,
+      "59392": 19,
+      "65536": 44
    },
-   "started": "2026-04-30T07:46:04.421Z",
+   "started": "2026-04-30T09:27:20.100Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4096,
@@ -79,7 +76,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34363a30 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a32 ..."
          ]
       ],
       [
@@ -95,7 +92,7 @@
          8,
          true,
          0,
-         "251c5d73",
+         "d8492474",
          null,
          null,
          false
@@ -104,7 +101,7 @@
          "TO",
          [
             8,
-            "8882251c5d7326f4"
+            "8882d8492474dba1"
          ],
          false
       ],

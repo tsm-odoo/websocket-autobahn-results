@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.",
    "droppedByMe": false,
-   "duration": 2,
+   "duration": 1,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: fyk4/jJ/9C3mtz63L6gXBQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: UwTepzoNwI+eaYLmFH7+5IJWcKA=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=PW9NaEVFHYhWinegaIDyzAcwcfMWVQ272Y9Im0OVsTXY0FvrnNFPHryT-v2Wn46MwgCYXVV__tTNXJd_B6Ig9A; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: 3/Vbqvgvape4ajU+l7tpAQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:05 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: 54CwbDBlcgP65A9iE4NM+28FdtI=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=nFKW1SNQsYVDwqZACARPvGVzVLkTUEJ64LbUB1VUqxxt0yl-ZYioB1XX2vd-sdOm2-itUoZw392H3PTLWM40QA; Expires=Fri, 30 Apr 2027 09:27:05 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "3.3",
    "isServer": false,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "31": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.499Z",
+   "started": "2026-04-30T09:27:05.904Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -87,7 +87,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -99,7 +99,7 @@
          1,
          true,
          0,
-         "2bc745b0",
+         "9b68aafe",
          null,
          null,
          true
@@ -108,7 +108,7 @@
          "TO",
          [
             19,
-            "818d2bc745b063a229dc44eb65c744b529d40a"
+            "818d9b68aafed30dc692f4448a89f41ac69aba"
          ],
          true
       ],
@@ -121,7 +121,7 @@
          1,
          true,
          3,
-         "1e457d5f",
+         "dbcd83d8",
          null,
          null,
          true
@@ -135,7 +135,7 @@
          9,
          true,
          0,
-         "d85b36e2",
+         "d6f67204",
          null,
          null,
          true
@@ -148,7 +148,7 @@
          "TO",
          [
             19,
-            "b18d1e457d5f5620113371695d287137113b3f"
+            "b18ddbcd83d893a8efb4b4e1a3afb4bfefbcfa"
          ],
          true
       ],
@@ -156,7 +156,7 @@
          "TO",
          [
             6,
-            "8980d85b36e2"
+            "8980d6f67204"
          ],
          true
       ],
@@ -207,7 +207,7 @@
          8,
          true,
          0,
-         "f44f8426",
+         "3c5512c2",
          null,
          null,
          false
@@ -216,7 +216,7 @@
          "TO",
          [
             8,
-            "8882f44f8426f7a7"
+            "88823c5512c23fbd"
          ],
          false
       ]

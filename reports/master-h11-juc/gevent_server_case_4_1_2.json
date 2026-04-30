@@ -1,0 +1,144 @@
+{
+   "agent": "Gevent Server",
+   "behavior": "OK",
+   "behaviorClose": "OK",
+   "case": 36,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": true,
+   "description": "Send frame with reserved non-control <b>Opcode = 4</b> and non-empty payload.",
+   "droppedByMe": false,
+   "duration": 1,
+   "expectation": "The connection is failed immediately.",
+   "expected": {
+      "OK": []
+   },
+   "expectedClose": {
+      "closeCode": [
+         1002
+      ],
+      "closedByMe": false,
+      "requireClean": false
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8072\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: EQ/shOg2jIc5qJepRWU2iA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zYWSKd3eC3FtQpMq1Og+RjXV03g=\r\nContent-Type: text/html; charset=utf-8\r\nAccess-Control-Allow-Origin: *\r\nAccess-Control-Allow-Methods: GET, POST\r\nSet-Cookie: session_id=o7Ek1sK2EUrGb48k6ke4RfbcqVsHY3z6ZiYnFTJmS_fHCpLf92EFDFsLe7dTp8urdzgJmsPGDmJhmaG_f2UDAw; Expires=Fri, 30 Apr 2027 09:27:25 GMT; Max-Age=604800; HttpOnly; Path=/\r\nX-Content-Type-Options: nosniff\r\nDate: Thu, 30 Apr 2026 09:27:25 GMT\r\n\r\n",
+   "id": "4.1.2",
+   "isServer": false,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1002,
+   "remoteCloseReason": "4 is not a valid Opcode",
+   "reportCompressionRatio": false,
+   "reportTime": false,
+   "result": "Actual events match at least one expected.",
+   "resultClose": "Connection was properly closed",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "27": 1,
+      "496": 1
+   },
+   "started": "2026-04-30T09:27:25.752Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "4": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "8": 1,
+      "29": 1,
+      "251": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "TO",
+         [
+            251,
+            "474554202f776562736f636b657420485454502f312e310d0a557365722d4167656e743a204175746f6261686e5465737453756974652f32352e31302e312d30 ..."
+         ],
+         false
+      ],
+      [
+         "RO",
+         [
+            496,
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a557067726164653a20776562736f636b65740d0a436f6e6e656374696f6e ..."
+         ]
+      ],
+      [
+         "TF",
+         [
+            23,
+            "reserved opcode payload"
+         ],
+         4,
+         true,
+         0,
+         "6fd68bf3",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            29,
+            "84976fd68bf31db3f8961da0ee974fb9fb9000b2eed31fb7f29f00b7ef"
+         ],
+         false
+      ],
+      [
+         "KL",
+         1
+      ],
+      [
+         "RO",
+         [
+            27,
+            "881903ea34206973206e6f7420612076616c6964204f70636f6465"
+         ]
+      ],
+      [
+         "RF",
+         [
+            25,
+            "0x03ea34206973206e6f7420612076616c6964204f70636f6465"
+         ],
+         8,
+         true,
+         0,
+         false,
+         null
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         "e6325d14",
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            8,
+            "8882e6325d14e5da"
+         ],
+         false
+      ]
+   ]
+}

@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: dO7eLLchDnDlYgFqkE4tRg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: 0BwJaukDxdSYmwqKFMw/7iFbcpI=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=0xL9h3JK4ttYdYuRBH1vC2a3ftAJw4QVPU28TdoTI6PaYNUUsPQ65cAeDI9SekKlitmK9Y_h-ha1FMIYf2ZHiQ; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: qJ3T8Ir5mlWtF/8qsKqprg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:06 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: +hmJivJRuNZW3owgnop8TPy2/tc=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=Nh76UVuLDiO2sbUUJwxW6RVH5xETiguthZov5hjb4gfrnFWqPD4P4dn2vdg8nhN-y_-rR-hDUv9QwMtxIgpazg; Expires=Fri, 30 Apr 2027 09:27:06 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "5.15",
    "isServer": false,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "33": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.758Z",
+   "started": "2026-04-30T09:27:06.156Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -86,7 +86,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -98,7 +98,7 @@
          1,
          false,
          0,
-         "9bbb6a45",
+         "4dc39be9",
          null,
          null,
          false
@@ -107,7 +107,7 @@
          "TO",
          [
             15,
-            "01899bbb6a45fdc90b22f6de0431aa"
+            "01894dc39be92bb1fa8e20a6f59d7c"
          ],
          false
       ],
@@ -120,7 +120,7 @@
          0,
          true,
          0,
-         "19744e48",
+         "1bfd37b1",
          null,
          null,
          false
@@ -129,7 +129,7 @@
          "TO",
          [
             15,
-            "808919744e487f062f2f7411203c2b"
+            "80891bfd37b17d8f56d6769859c529"
          ],
          false
       ],
@@ -142,7 +142,7 @@
          0,
          false,
          0,
-         "d0f6f842",
+         "5ef1149a",
          null,
          null,
          false
@@ -151,7 +151,7 @@
          "TO",
          [
             15,
-            "0089d0f6f842b6849925bd939636e3"
+            "00895ef1149a388375fd33947aee6d"
          ],
          false
       ],
@@ -164,7 +164,7 @@
          1,
          true,
          0,
-         "b5d521db",
+         "761bb4eb",
          null,
          null,
          false
@@ -173,7 +173,7 @@
          "TO",
          [
             15,
-            "8189b5d521dbd3a740bcd8b04faf81"
+            "8189761bb4eb1069d58c1b7eda9f42"
          ],
          false
       ],
@@ -228,7 +228,7 @@
          8,
          true,
          0,
-         "0c6cbbcc",
+         "c696d673",
          null,
          null,
          false
@@ -237,7 +237,7 @@
          "TO",
          [
             8,
-            "88820c6cbbcc0f84"
+            "8882c696d673c57e"
          ],
          false
       ]

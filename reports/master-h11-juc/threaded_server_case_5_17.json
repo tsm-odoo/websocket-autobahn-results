@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
    "droppedByMe": false,
-   "duration": 1,
+   "duration": 2,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: KqC0G7kKz8kT1SXegeDo5Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 07:45:50 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: EyloC87aC+KQ27y5VRMVY74BFrM=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=8hTctP_-w7_LwRlowyF-VTuySrl2mb0DP-5W8pasvV0k5vHwkFdwVPErofX1JPVkyZVXUVxVSJk7co-Qa8ohRQ; Expires=Fri, 30 Apr 2027 07:45:50 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
+   "httpRequest": "GET /websocket HTTP/1.1\r\nUser-Agent: AutobahnTestSuite/25.10.1-0.10.9\r\nHost: 127.0.0.1:8069\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nSec-WebSocket-Key: aFeAnLzhOF33MTT/Dp/qAQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 SWITCHING PROTOCOLS\r\ndate: Thu, 30 Apr 2026 09:27:06 GMT\r\nupgrade: websocket\r\nconnection: Upgrade\r\nsec-websocket-accept: v06bkiBmyGr4IDeZpuOnKaj9LWA=\r\ncontent-type: text/html; charset=utf-8\r\naccess-control-allow-origin: *\r\naccess-control-allow-methods: GET, POST\r\nset-cookie: session_id=6pu_SWa9_w93_pO7HJmeVVJATa9azQahbozDFZRDeiGKgpIv_mGqILTIeVS7SteELpfGlr4XALbcxyKNUlzN4Q; Expires=Fri, 30 Apr 2027 09:27:06 GMT; Max-Age=604800; HttpOnly; Path=/\r\nx-content-type-options: nosniff\r\nserver: odoo/19.3 python-h11/0.16.0 CPython/3.12.1\r\n\r\n",
    "id": "5.17",
    "isServer": false,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "33": 1,
       "548": 1
    },
-   "started": "2026-04-30T07:45:50.812Z",
+   "started": "2026-04-30T09:27:06.209Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -71,7 +71,7 @@
          "RO",
          [
             548,
-            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030373a34353a35 ..."
+            "485454502f312e312031303120535749544348494e472050524f544f434f4c530d0a646174653a205468752c2033302041707220323032362030393a32373a30 ..."
          ]
       ],
       [
@@ -83,7 +83,7 @@
          0,
          true,
          0,
-         "6317b76a",
+         "0cd50427",
          null,
          null,
          false
@@ -92,7 +92,7 @@
          "TO",
          [
             15,
-            "80896317b76a0565d60d0e72d91e52"
+            "80890cd504276aa7654061b06a533d"
          ],
          false
       ],
@@ -105,7 +105,7 @@
          1,
          false,
          0,
-         "a1768a02",
+         "28fe3a4d",
          null,
          null,
          false
@@ -114,7 +114,7 @@
          "TO",
          [
             15,
-            "0189a1768a02c704eb65cc13e47693"
+            "018928fe3a4d4e8c5b2a459b54391a"
          ],
          false
       ],
@@ -127,7 +127,7 @@
          0,
          true,
          0,
-         "178b6b74",
+         "2230a190",
          null,
          null,
          false
@@ -136,7 +136,7 @@
          "TO",
          [
             15,
-            "8089178b6b7471f90a137aee050024"
+            "80892230a1904442c0f74f55cfe411"
          ],
          false
       ],
@@ -149,7 +149,7 @@
          0,
          true,
          0,
-         "1c0f27e9",
+         "dd55a1ee",
          null,
          null,
          false
@@ -158,7 +158,7 @@
          "TO",
          [
             15,
-            "80891c0f27e97a7d468e716a499d2d"
+            "8089dd55a1eebb27c089b030cf9aec"
          ],
          false
       ],
@@ -171,7 +171,7 @@
          1,
          false,
          0,
-         "b4e5600b",
+         "10ff50a0",
          null,
          null,
          false
@@ -180,7 +180,7 @@
          "TO",
          [
             15,
-            "0189b4e5600bd297016cd9800e7f86"
+            "018910ff50a0768d31c77d9a3ed422"
          ],
          false
       ],
@@ -193,7 +193,7 @@
          0,
          true,
          0,
-         "337f4466",
+         "1a068671",
          null,
          null,
          false
@@ -202,7 +202,7 @@
          "TO",
          [
             15,
-            "8089337f4466550d25015e1a2a1200"
+            "80891a0686717c74e7167763e80529"
          ],
          false
       ],
@@ -238,7 +238,7 @@
          8,
          true,
          0,
-         "39101ba7",
+         "d948221c",
          null,
          null,
          false
@@ -247,7 +247,7 @@
          "TO",
          [
             8,
-            "888239101ba73af8"
+            "8882d948221cdaa0"
          ],
          false
       ]
