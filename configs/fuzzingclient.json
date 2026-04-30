@@ -1,0 +1,17 @@
+{
+  "outdir": "/reports",
+  "servers": [
+    {
+      "agent": "Threaded Server",
+      "url": "ws://127.0.0.1:8069/websocket" 
+    },
+    {
+      "agent": "Gevent Server",
+      "url": "ws://127.0.0.1:8072/websocket"
+    }
+  ],
+  "cases": ["*"],
+  "exclude-cases": ["12.*", "13.*"],
+  "exclude-agent-cases": {}
+}
+
